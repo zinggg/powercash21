@@ -30,6 +30,7 @@ Or create ENV variable POWERCASH21_SECRET_KEY ( ENV['POWERCASH21_SECRET_KEY'] ) 
 
 ## Usage
 
+```ruby
 powercash_client = Powercash21::Client.new
 
 url = 'pay/backoffice/tx_diagnose'
@@ -43,7 +44,7 @@ params = {
 
 response = powercash_client.post(url, params)
 response.body
-
+```
 
 ## Contributing
 
